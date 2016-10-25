@@ -1,0 +1,31 @@
+<template name="Post_Item">
+  {{#If_Logged_In}}
+  <div class="buffer">
+    <div class="ui container">
+      <div class="ui header"><h1>Post a new item</h1></div>
+      <form class="ui form">
+        <div class="fields">
+          <div class="eight wide field">
+            <label>Item Name</label>
+            <input type="text" name="item-name" placeholder="Item Name">
+          </div>
+          <div class="two wide field">
+            <label>Price</label>
+            <input type="number" name="item-price">
+          </div>
+        </div>
+        <div class="field">
+          <label>Description</label>
+          <textarea></textarea>
+        </div>
+        <div class="six wide field">
+          <label>Upload an image</label>
+          <input type="file" name="item-image">
+        </div>
+
+        <button class="ui green button" type="submit">Post</button>
+      </form>
+    </div>
+  </div>
+  {{/If_Logged_In}}
+</template>

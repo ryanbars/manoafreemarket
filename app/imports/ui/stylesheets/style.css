@@ -1,0 +1,15 @@
+body {
+  padding-top: 61px;  /* Move body of page below navbar. */
+}
+#logo {
+	width: 200px;
+	height: auto;
+}
+
+.buffer {
+	margin-top: 40px;
+}
+
+#item-gallery {
+	text-align: center;
+}
