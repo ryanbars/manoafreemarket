@@ -36,6 +36,34 @@ FlowRouter.route('/post', {
   },
 });
 
+FlowRouter.route('/mychats/:_id', {
+  name: 'My_Chats',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'My_Chats' });
+  },
+});
+
+FlowRouter.route('/chat/:_id', {
+  name: 'Chat_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Chat_Page' });
+  },
+});
+
+FlowRouter.route('/mybookmarks/:_id', {
+  name: 'My_Bookmarks',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'My_Bookmarks' });
+  },
+});
+
+FlowRouter.route('/myprofile/:_id', {
+  name: 'My_Profile',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'My_Profile' });
+  },
+});
+
 FlowRouter.notFound = {
   action() {
     BlazeLayout.render('App_Body', { main: 'App_Not_Found' });
